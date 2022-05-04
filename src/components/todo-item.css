@@ -1,0 +1,37 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 10px auto;
+}
+.todo-item.done {
+}
+.todo-item.done p {
+    text-decoration: line-through;
+}
+.todo-item__checbox {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.todo-item__checbox label {
+    display: block;
+    height: 18px;
+    width: 18px;
+    box-shadow: inset 0 0 5px 1px rgb(187, 169, 37);
+    border-radius: 3px;
+}
+.todo-item__checbox label::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    text-align: center;
+    line-height: 18px;
+}
+#item-checbox:checked + label::after {
+    content: '✔';
+    color: rgb(156, 91, 7);
+}
