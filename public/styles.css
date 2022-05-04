@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Square Peg', cursive;
+    font-family: 'Caveat', cursive;
     font-size: 22px;
     letter-spacing: 2px;
 }
@@ -21,7 +21,7 @@ button:focus {
     
 }
 .app__header {
-    padding: 20px 20px;
+    padding: 20px 40px;
     height: 100px;
     display: flex;
     justify-content: space-between;
@@ -62,8 +62,8 @@ button:focus {
     width: 20px;
     border-radius: 50%;
     content: '+';
-    text-align: center;
-    line-height: 26px;
-    font-size: 32px;
+    text-align: left;
+    line-height: 12px;
+    font-size: 36px;
     border: 1px solid grey;
 }
