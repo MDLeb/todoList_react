@@ -16,7 +16,7 @@ function App() {
             console.log(todoListArr.length);
           }
         }>
-          addList
+          add List
         </div>
         <div className='app__chnge-theme'></div>
         <Clock className='app__clock'/>

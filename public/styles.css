@@ -18,7 +18,7 @@ button:focus {
     outline: 1px dotted grey;
 }
 .app {
-       
+    
 }
 .app__header {
     padding: 20px 20px;
@@ -40,4 +40,30 @@ button:focus {
 .app__content {
     display: flex;
     flex-wrap: wrap;
+    padding: 0 20px;
+}
+.app__add-list {
+    text-transform: capitalize;
+    margin-left: 30px;
+    padding-left: 30px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.app__add-list::before {
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    content: '+';
+    text-align: center;
+    line-height: 26px;
+    font-size: 32px;
+    border: 1px solid grey;
 }
