@@ -5,7 +5,7 @@ import styles from "./todo-list.css";
 
 const TodoList = ({title}) => {
     let [todoArray, setTodoArray] = useState([]);
-    let [ID, setID] = useState(1);;
+   // let [ID, setID] = useState(1);;
 
     return (
         <div className="wrapper_todo-list">
@@ -13,7 +13,8 @@ const TodoList = ({title}) => {
                 <div className="todo-list__title">
                     <h2>{title}</h2>
                     <div className="todo-list__remove-btn" onClick={(event) => {
-                        event.target.parentNode.parentNode.remove();//возможно надо удалять из массива в Арр
+                        //event.target.parentNode.parentNode.remove();//возможно надо удалять из массива в Арр
+                        event.target.parentNode.parentNode.parentNode.remove();
                     }}></div>
                 </div>
                 <div className="todo-list__add-item">
@@ -22,12 +23,11 @@ const TodoList = ({title}) => {
                         let value = event.target.parentNode.querySelector('input').value;
                         if(!value) return;
                         setTodoArray([...todoArray, {
-                            id: ID,
+                            id: Date.now(),
                             value: value,
                             done: false,
                             }]
                         );
-                        setID(ID + 1);
                         event.target.parentNode.querySelector('input').value = null;
                     }
                 }>add</button>

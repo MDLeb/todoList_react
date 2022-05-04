@@ -8,8 +8,6 @@ function App() {
 
   let [todoListArr, setTodoListArr] = useState([]);
 
-  console.dir(todoListArr);
-
   return (
     <div className='app'>
       <header className='app__header'>
@@ -27,8 +25,7 @@ function App() {
       <div className='app__content'>
         {
           todoListArr.map((elem, index) => 
-          
-            <TodoList title={`New list ${index+1}`} key={index}/>
+              <TodoList title={`New list ${index+1}`} key={index}/>
           )          
         }
       </div>

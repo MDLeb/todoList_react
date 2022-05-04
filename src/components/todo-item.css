@@ -31,7 +31,7 @@
     text-align: center;
     line-height: 18px;
 }
-#item-checbox:checked + label::after {
+.todo-item .item-checbox:checked + label::after {
     content: '✔';
     color: rgb(156, 91, 7);
 }
